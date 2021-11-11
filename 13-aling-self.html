@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - align-center</title>
+</head>
+<style>
+    .container{
+        max-width: 450px;
+        border: 1px solid;
+        margin-bottom: 10px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+    }
+    .item{
+        background-color: brown;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin: 2px;
+
+    }
+    .column{
+        flex-direction: column;
+    }
+    .center{
+        align-self: center;
+    }
+    .flex-start{
+        align-self: flex-start;
+    }
+    .flex-end{
+        align-self: flex-end;
+    }
+    .stretch{
+        align-self: stretch;
+    }
+    .baseline{
+        align-self: baseline;
+    }
+    .auto{
+        align-self: auto;
+    }
+</style>
+<body>
+    <p>in row </p>
+    <div class="container">
+        <div class="item flex-start">flex-start</div>
+        <div class="item center">center</div>
+        <div class="item flex-end">flex-end</div>
+        <div class="item stretch">stretch </div>
+        <div class="item auto">auto - obedecendo align-center do container</div> 
+    </div>
+    <p>in column </p>
+    <div class="container column">
+        <div class="item flex-start">flex-start</div>
+        <div class="item center">center</div>
+        <div class="item flex-end">flex-end</div>
+        <div class="item stretch">stretch </div>
+        <div class="item auto">auto - obedecendo align-center do container</div>
+    </div>
+    
+</body>
+</html>
